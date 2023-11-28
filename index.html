@@ -28,6 +28,20 @@ You should now have a separate browser window that shows you a preview of your w
 </head>
 <!--That concludes the important metadata that begins every HTML page. You can see where tags begin and end. Closing tags use a forward slash. So, <head> is an opening tag and </head> tells the browser where that information ends.-->
 
+<!--Javascript-->
+<!--Javscript controls complex features like hamburger menus. You must include this script in the
+  HTML file, or the menu won't work. I like to add the script in the <head> after my stylesheet so it's easy to find.-->
+
+    <script>function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+
+
 <body>
 <!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience. It's broken up into containers using the <div> tag to group content together.-->
 
@@ -47,7 +61,24 @@ You should now have a separate browser window that shows you a preview of your w
 
 <!--Fuego programs sometimes use "in-line styling" to provide quick fixes to content design. In the above case, you could change "left" to "right" or "center" depending on your specific design needs. That said, left align is usually best practice for improving readability.-->
 
-<div class="textblock" style="text-align: left">
+<!--nav-->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens. Do not skip this! 
+You will not have a hamburger menu without it. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#blog">Blog Posts</a>
+  <a href="#about">About Me</a>
+  <a href="#abstract">Abstract</a>
+  <a href="#philosophy">Accessibility &amp; Design Philosophy</a>
+  <a href="#references">References</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="textblock" style="text-align: center">
   <h2>Academic Pursuits</h2>
   <h3>I am currently in my last semester at Western Illinois University. I will graduate in December 2023 with a Bachelor's degree in English and with a minor in communication. I'm taking a Grant Writing class with Dr. Mossman and "Writing for the Web" with Dr. B, which is the reason that this website exists. I've learned a lot about my field throughout my academic journey and hope to apply my experiences to the copyediting field after I graduate. I'm taking five classes and am soaking in my last experience as a college student!</h3>
   </div>
@@ -62,7 +93,7 @@ You should now have a separate browser window that shows you a preview of your w
 
 <!--Let's go a bit deeper. What are you into? What are your interests, values, and principles? Take some time to explain your passions. How did these influences impact where you are now?-->
 
-<div class="textblock" style="text-align: left">
+<div class="textblock" style="text-align: center">
   <h2>Interests, Values, &amp; Principles</h2>
     <h3>From a young age, I began to feel a strong desire to be as helpful as possible to everyone in my life. A lot of this came from my religious upbringing. I've been a Christian my whole life, and I hope others can see that side of me through my actions. My religious beliefs and mission to be helpful to others led to me becoming a Writing Consultant at the University Writing Center. I enjoy sharing my experience with English with others and giving them a little bit of the passion that I have for writing. Alongside my religious beliefs, I grew up writing a lot. Instead of drawing pictures, I wrote poems and little stories and stapled the pages together to make mini books. Choosing to get an English degree was a natural next step for me. </h3>
   </div>
@@ -92,7 +123,7 @@ You should now have a separate browser window that shows you a preview of your w
 
 <!--Let's talk a little about the future. After school what kind of job or career would you like to pursue? What is your reasoning for going on this path? How might it connect to your field of study, interests, values, and principles? Why is this job or career important to you? Why is it important generally?-->
 
-<div class="textblock" style="text-align: left">
+<div class="textblock" style="text-align: center">
    <h2>In the Future</h2>
       <h3>After receiving my degree, I hope to enter the copyediting field. I enjoy revising sentences and figuring out how to make them flow more efficiently. Working as a Writing Consultant has given me lots of experience with writing from many different fields and has allowed me to overcome grammatical and organizational challenges. I believe my work as a copyeditor will not only be a fulfilling experience, allowing me to make other peoples' lives easier, but it will also be a lot of fun!</h3>
   </div>
