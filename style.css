@@ -52,7 +52,7 @@ Add the necessary code to the CSS file. Remember: the CSS styles the nav bar, so
     float: left;
     display: block;
     color: 
-#f2f2f2;
+    #FFCC00;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -127,7 +127,7 @@ This class makes the topnav look good on small screens (display the links vertic
   }
 
   .topnav a.active {
-    background-color: purple;
+    background-color: #663399;
     color: white;
   }
 
@@ -185,7 +185,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .button {
-    background-color: #2A5DB0;
+    background-color: #663399;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -196,17 +196,17 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .button:hover {
-    background-color: #4682B4;
+    background-color: #663399;
 }
 
 /* Change unordered list from disc (default) to circle, square, or none. */
 .ul {
     list-style-type: disc;
-    font-size: 20pt;
+    font-size: 15pt;
     padding: 20px;
 }
 
-/* Change orderd list from upper-roman to lower-alpha. */
+/* Change ordered list from upper-roman to lower-alpha. */
 .ol {
     list-style-type: upper-roman;
     font-size: 20pt;

@@ -19,7 +19,7 @@ You should now have a separate browser window that shows you a preview of your w
       <!--Next comes the <head> information including the title and the important links that make the webtext work. When a browser accesses your url, it "reads" the index.html document <head> first to learn the names and locations of the files and assets it will need to assemble your code into a visual display.-->
     
       <!--The current <title> for the page is About Me (see just below). The <title> will appear in your document's browser tab. You can leave this title or change it up, but make sure it conveys the page's content.-->
-    <title>About Me</title>
+    <title>Accessibility & Design Philosophy</title>
     <!--The stuff below the title does important work to tell browsers what this page should look like on different screens. Leave this code as-is.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,10 +47,21 @@ You should now have a separate browser window that shows you a preview of your w
     
     <!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." Replace the hero image with one that you'd like to use. To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
     
+    <div class="topnav" id="myTopnav">
+      <a href="home.html" class="active">Home</a>
+      <a href="blog.html">Blog Posts</a>
+      <a href="about.html">About Me</a>
+      <a href="abstract.html">Project Abstract</a>
+      <a href="philosophy.html">Accessibility &amp; Design Philosophy</a>
+      <a href="references.html">References</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     
     <div class="hero-image">
       <div class="hero-text">
-          <h1>Marathon Foodways</h1>
+          <h1>Accessibility & Design Philosophy</h1>
       </div>
     </div>
     <!--Tip: Want to change the color of the <h1> text? You'll need to locate the information on the stylesheet. Find the code by looking for the class info (class="hero-text").-->
@@ -66,17 +77,6 @@ You should now have a separate browser window that shows you a preview of your w
     You will not have a hamburger menu without it. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div class="topnav" id="myTopnav">
-      <a href="home.html" class="active">Home</a>
-      <a href="blog.html">Blog Posts</a>
-      <a href="about.html">About Me</a>
-      <a href="abstract.html">Abstract</a>
-      <a href="philosophy.html">Accessibility &amp; Design Philosophy</a>
-      <a href="references.html">References</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
     
     <div class="textblock" style="text-align: center">
       
@@ -92,7 +92,7 @@ You should now have a separate browser window that shows you a preview of your w
     
     <div class="textblock" style="text-align: center">
         <h2>Philosophy Statement</h2>
-        <h3>This will contain my design philosophy statement.</h3>
+        <p>This will contain my design philosophy statement.</p>
       
     <!--Quick fact: Did you know "Lorem ipsum," the fill text used in this web template, was hacked out of Cicero's "De finibus bonorum et malorum"? Developers made it non-sensical, and it's used as placeholder text.-->
     
