@@ -196,7 +196,7 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 .button:hover {
-    background-color: #663399;
+    background-color: #FFCC00;
 }
 
 /* Change unordered list from disc (default) to circle, square, or none. */
