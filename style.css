@@ -62,7 +62,7 @@ Add the necessary code to the CSS file. Remember: the CSS styles the nav bar, so
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: 
-#ddd;
+#FFCC00;
     color: 
     #663399;
   }
